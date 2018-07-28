@@ -37,4 +37,15 @@ sysinfo.txt
 *.unitypackage
 
 #Bolt Ignores
-Ludiq/*
+Ludiq*
+bin/
+obj/
+Temp/
+Obj/
+Library/
+AssetStoreTools*
+.vs/
+.vscode/
+*.suo
+*.sln
+*.csproj 

@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/WizardDuel/Scenes/SplashScreen.unity
+    guid: b519ae57ac1154691918937277a0633e
+  - enabled: 1
+    path: Assets/WizardDuel/Scenes/MainMenu.unity
+    guid: 0f27363055c974ef4b182fd1f31580c3
+  - enabled: 1
+    path: Assets/WizardDuel/Scenes/BattleScene.unity
+    guid: dc0fe5a89c1bf7042862e742b5c54cbe
   m_configObjects: {}
