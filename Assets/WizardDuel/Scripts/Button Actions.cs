@@ -6,6 +6,8 @@ public class ButtonActions : MonoBehaviour
 {
     public GameManager gm;
 
+
+
 	// Update is called once per frame
 	void Update ()
     {

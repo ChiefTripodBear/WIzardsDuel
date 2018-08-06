@@ -8,6 +8,13 @@ namespace SampleGame
 {
     public class GameManager : MonoBehaviour
     {
+        //enum for controlling turn phases
+        public enum Phase { cast1, peek, cast2, result };
+
+        //capture what turnnumber and the active phase of the battle
+        public Phase activePhase;
+        public int _turnNumber;
+
         // reference to objective
         private Objective _objective;
 
@@ -29,7 +36,6 @@ namespace SampleGame
             }
             else
             {
-                _isGameOver = false;
                 _instance = this;
             }
             
@@ -42,6 +48,18 @@ namespace SampleGame
             {
                 _instance = null;
             }
+        }
+
+        void Start()
+        {
+            ResetGame();
+        }
+
+        private void ResetGame()
+        {
+            _isGameOver = false;
+            _turnNumber = 1;
+            activePhase = Phase.cast1;
         }
 
         // end the level
