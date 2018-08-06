@@ -174,7 +174,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _solidAlpha: 1
   _clearAlpha: 0
-  _fadeDuration: 1
+  _fadeOnDuration: 2
+  _fadeOffDuration: 2
   graphicsToFade:
   - {fileID: 114742221220784828}
   - {fileID: 114143696639940468}
@@ -238,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80845e8eaceaa4cc29f80b7a15f19097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _screenFader: {fileID: 0}
+  _screenFader: {fileID: 114336070485670316}
   delay: 0
 --- !u!114 &114448889340944650
 MonoBehaviour:
@@ -282,6 +283,17 @@ MonoBehaviour:
       - m_Target: {fileID: 114412458315019484}
         m_MethodName: FadeAndLoad
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1711782932136600}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
